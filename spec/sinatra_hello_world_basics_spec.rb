@@ -10,5 +10,8 @@ describe "GET '/'" do
 
   it "responds with 'Hello, World!'" do
     expect(last_response.body).to include("Hello, World!")
-  end
+    get '/' do
+  "Hello, World!"
 end
+end 
+
